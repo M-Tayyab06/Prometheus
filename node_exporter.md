@@ -88,3 +88,4 @@ Then reload Prometheus:
 ```bash
 sudo systemctl restart prometheus
 ```
+![image](https://github.com/user-attachments/assets/0efff06a-5471-45ac-b854-82840e7a6b7a)
