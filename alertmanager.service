@@ -1,0 +1,18 @@
+[Unit]
+Description=Prometheus Alert Manager
+Documentation=https://prometheus.io/docs/introduction/overview/
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=prometheus
+Group=prometheus
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/var/lib/alertmanager/alertmanager --storage.path="/var/lib/alertmanager/data" --config.file="/var/lib/alertmanager/alertmanager.yml"
+
+SyslogIdentifier=prometheus_alert_manager
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
