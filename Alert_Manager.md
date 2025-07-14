@@ -119,10 +119,14 @@ systemctl start alertmanager
 sleep 2
 if systemctl is-active --quiet alertmanager; then
   echo "🎉 Alertmanager is now running and enabled at boot!"
-  echo "Access it at http://localhost:9093"
+  echo "Access it at http://localhost:9093 OR http://ip_address:9093"
 else
   echo "⚠️ Alertmanager failed to start. Check logs with: systemctl status alertmanager"
 fi
 
 # 8. Cleanup
 rm -rf "$TMPDIR"
+
+<img width="1143" height="448" alt="image" src="https://github.com/user-attachments/assets/25983d95-2b5b-4971-8dac-ed278eb42c4c" />
+
+This is the dashboard of the Alert Manager
