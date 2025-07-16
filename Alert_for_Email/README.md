@@ -102,7 +102,7 @@ inhibit_rules:
 Use Alertmanager CLI:
 
 ```bash
-amtool check-config configs/alertmanager.yml
+./amtool check-config configs/alertmanager.yml
 ```
 
 ---
@@ -118,8 +118,12 @@ amtool check-config configs/alertmanager.yml
 ## 📸 Optional Screenshots
 
 Add screenshots of:
-
+<img width="1365" height="443" alt="image" src="https://github.com/user-attachments/assets/43b2182e-b0e3-44ac-8966-97bbcc1ef58e" />
+- Prometheus Showing Alert for the Firing alert
+<img width="981" height="457" alt="image" src="https://github.com/user-attachments/assets/2feae9eb-b557-4797-9090-270a4140f66f" />
 - Alertmanager UI showing active alerts
+<img width="881" height="76" alt="image" src="https://github.com/user-attachments/assets/b3827fcd-0ee0-4c9b-b408-fb51a44eb601" />
+<img width="551" height="489" alt="image" src="https://github.com/user-attachments/assets/61fd1236-1b90-4987-ab3b-8448d9088c2e" />
 - Email received in your inbox
 
 ---
