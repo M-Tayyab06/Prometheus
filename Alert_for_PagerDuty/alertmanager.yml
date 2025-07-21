@@ -1,0 +1,15 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'pagerduty_notifications'
+
+receivers:
+  - name: 'pagerduty_notifications'
+    pagerduty_configs:
+      - routing_key: 'YOUR_PAGERDUTY_ROUTING_KEY_HERE'
+        severity: '{{ .CommonLabels.severity }}'
+        description: '{{ .CommonAnnotations.description }}'
+        details:
+          alertname: '{{ .CommonLabels.alertname }}'
+          instance: '{{ .CommonLabels.instance }}'
