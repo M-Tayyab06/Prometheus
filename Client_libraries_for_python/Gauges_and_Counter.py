@@ -3,17 +3,13 @@ import random
 import time
 
 REQUEST_TIME = Summary("request_processing_second","Time spend processing a request")
-MY_COUNTER= Counter("my_counter","")
+MY_COUNTER= Counter("my_counter","", ["name" , "age"])
 MY_GAUGE= Gauge("my_gauge","")
 
 
 @REQUEST_TIME.time()
-@MY_COUNTER.count_exceptions()
 def process_request(t):
-    MY_COUNTER.inc()
-    MY_GAUGE.set(5)
-    MY_GAUGE.inc(5)
-    MY_GAUGE.dec(2)
+    MY_COUNTER.labels(name="Justin", age=45).inc(3)
     time.sleep(t)
 
 
