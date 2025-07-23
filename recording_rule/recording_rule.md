@@ -64,6 +64,7 @@ groups:
 ```promql
 job:http_in_requests_per_second:rate5m
 ```
+<img width="1345" height="560" alt="image" src="https://github.com/user-attachments/assets/d333a892-6037-4731-b8ab-d29a3719f3e3" />
 
 * You should see the precomputed metric available for use.
 
@@ -84,7 +85,3 @@ job:http_in_requests_per_second:rate5m
 * Cleaner dashboards and alerting expressions
 
 ---
-
-## 📎 Reference
-
-This markdown was generated based on an instructional video walkthrough on using `rate()` in Prometheus recording rules.
