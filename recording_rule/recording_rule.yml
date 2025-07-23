@@ -1,0 +1,7 @@
+groups:
+  - name: node exporter rules
+    rules:
+    - record: cpu:node_cpu_seconds_total:avg
+      expr: avg by (cpu) (irate(node_cpu_seconds_total[1m]))
+      labels:
+        exporter_type: node
