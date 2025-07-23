@@ -74,10 +74,4 @@ Prometheus is a leading monitoring solution used in DevOps and Site Reliability 
 - Enable proactive monitoring with alerting
 
 ---
-
-## 🔗 Project Link
-
-[👉 GitHub Repository](https://github.com/M-Tayyab06/Prometheus/tree/main/Client_libraries_for_python)
-
----
 `#Prometheus` `#Python` `#Monitoring` `#Metrics` `#DevOps` `#OpenSource` `#Observability`
