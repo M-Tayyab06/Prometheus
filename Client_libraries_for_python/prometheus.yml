@@ -1,0 +1,25 @@
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['ip_of_alert_manager_instance:9093']
+rule_files:
+  - "/etc/prometheus/rules/alerts.yml"
+  - "/etc/prometheus/rules/recording_rule.yml"
+# - "first_rules.yml"
+  # - "second_rules.yml"
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["prometheus_instance_ip:9090"]
+
+  - job_name: "application_server"
+    static_configs:
+      - targets: ["APP_instance_ip:9100"]
+
+  - job_name: "python"
+    static_configs:
+      - targets: ["PYTHON_job_ip:8000"]
