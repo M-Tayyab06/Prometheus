@@ -1,3 +1,12 @@
+# Prometheus Setup Guide (Ubuntu/Debian)
+
+![License](https://img.shields.io/github/license/M-Tayyab06/Prometheus?color=blue)
+![Stars](https://img.shields.io/github/stars/M-Tayyab06/Prometheus?style=social)
+![Issues](https://img.shields.io/github/issues/M-Tayyab06/Prometheus)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-orange?logo=ubuntu)
+![Monitoring](https://img.shields.io/badge/Monitoring-Prometheus-orange?logo=prometheus)
+
 # 🚀 Prometheus Installation on Ubuntu
 
 Welcome! This guide will walk you through installing and running **Prometheus** on an **Ubuntu** system step-by-step.
